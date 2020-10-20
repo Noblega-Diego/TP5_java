@@ -17,7 +17,7 @@ public class ejercicio05 {
     public static void main(String[] args) {
         ArrayList<Integer> numeros = new ArrayList<Integer>();
         Scanner sc = new Scanner(System.in);
-        llenarRandomList(numeros, 50);
+        llenarRandomList(numeros, 50);                              //se llena el ArrayList con numeros aleatorios
         int posicion;
         System.out.println("Ingrese el numero a búscar");
         Integer numeroIngresado = sc.nextInt();
@@ -27,7 +27,6 @@ public class ejercicio05 {
         }else{
             System.out.println("no se ha encontrado el numero ingresado");
         }
-        
     }
     
     public static void llenarRandomList(ArrayList<Integer> numeros, int cantidad){
