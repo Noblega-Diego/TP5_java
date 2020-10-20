@@ -12,17 +12,17 @@ import java.util.Scanner;
  */
 public class ejercicio01 {
     public static void main(String[] args) {
-        ArrayList<Double> numeros = new ArrayList<Double>();
-        double num;
+        ArrayList<Integer> numeros = new ArrayList<Integer>();
+        int num;
         Scanner sc = new Scanner(System.in);
         do{
-            num = sc.nextDouble();
+            num = sc.nextInt();
             if(num < 0) break;              //si el numero es menor a 0 no se sigue con el añadido de numeros
-            Double n = num;
+            Integer n = num;
             numeros.add(n);
         }while(true);
         System.out.println("numeros ingresados");
-        for (Double d : numeros) {
+        for (Integer d : numeros) {
             System.out.println(d);
         }
     }

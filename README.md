@@ -20,11 +20,11 @@ Codifiqueuna   aplicación   para   almacenar en   un   ArrayList<Integer> aleat
     d) cuántos de los números son menores que el promedio aritmético
 
 ####ejercicio04:
-Codifiqueuna aplicaciónque   permita   almacenar   palabras   en   un ArrayList<String>hasta  que  se  ingrese  la  palabra “salir”,  al  finalizar muestre por pantalla:
+Codifique una aplicación que   permita   almacenar   palabras   en   un ArrayList<String>hasta  que  se  ingrese  la  palabra “salir”,  al  finalizar muestre por pantalla:
     a)Las palabras ingresadas
-    b)Indicar cuálde las palabrasingresadasposee máscaracteres
-    c)Indicar si se ingresaron o no palabras igualeso repetidas
-    d)Mostrar las palabras repetidasingresadas y cuantas veces se repitióesa palabra
+    b)Indicar cuál de las palabras ingresadas posee más caracteres
+    c)Indicar si se ingresaron o no palabras iguales o repetidas
+    d)Mostrar las palabras repetidas ingresadas y cuantas veces se repitió esa palabra
 
 ####ejercicio05:
 Realice  una  búsqueda  secuencialen  un ArrayList<Integer>que  contenga 50 elementos generados aleatoriamente mediante la función java random. 
@@ -35,8 +35,11 @@ Realice una búsqueda secuencial de la siguiente forma:
 -fin de la búsqueda. 
 -De   lo   contrario, compararlo   con   la   segunda   posición,   y   así sucesivamente. 
 -Si se llega al final del arreglo y no se encontró el valor, debe indicarlo con un mensaje apropiado. 
--Si se encuentra, se debe especificar la posición que ese valor ocupa en la listapor primera vez.
+-Si se encuentra, se debe especificar la posición que ese valor ocupa en la lista por primera vez.
 
 ####ejercicio06:
-
+Codifiqueuna aplicación que solicite y cargue en una ArrayList<Integer>10 dígitos  enteros,  luego  
+cree  dos  nuevas ArrayList<Integer>y  asigne  ala primeralos números ingresados por el usuario de forma 
+ascendente y en la segundade   forma   descendente.   Muestre   las   2 listaspor   pantalla. 
+Investigue como ordenar una Lista(List<>)
 ####ejercicio07:
