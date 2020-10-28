@@ -62,22 +62,20 @@ public class ejercicio04 {
     
     private static void palabrasRepetidas(ArrayList<String> palabras){
         ArrayList<String> palabrasRepetidas = new ArrayList<String>();  //donde se guardaran las palabras repetidas
-        boolean coincidencia;
-        for(String palabra1 : palabras){
-            coincidencia = false;
-            for(String palabraRepetida : palabrasRepetidas){            
-                if(palabra1.compareToIgnoreCase(palabraRepetida) == 0){ //si la palabra se encuentra lista de palabras repetidas
-                    coincidencia = true;                                //no es necesario que se busquen coincidencias nuevaente
-                    break;
+        
+        for(String palabraActual : palabras){
+            boolean isRepetida = false;
+            for (String palaraRepetida : palabrasRepetidas) {
+                if(palabraActual.equalsIgnoreCase(palaraRepetida)){
+                    isRepetida = true;
                 }
             }
 
-            if(!coincidencia){                                          
-                int cantidad;
-                cantidad = vuscarPalabra(palabras, palabra1);
-                if(cantidad > 1){                                       //si se encuentra mas de 1 ves en el ArrayList
-                    palabrasRepetidas.add(palabra1);                    //la palbra sera añadida al arrayList que contiene las palabras repetidas
-                    System.out.println("    "+palabra1+":"+cantidad);   //se imprime la palabra con la canidad de veces que esta presente en el ArrayList
+            if(!isRepetida){
+                int cantidad = vuscarPalabra(palabras, palabraActual);
+                if(cantidad > 1){
+                    System.out.print(palabraActual +":"+ cantidad + "\n");  //muestro la palabra repetida
+                    palabrasRepetidas.add(palabraActual);                   //añado la palabra repetida en palabrasRepetidas
                 }
             }
         }
